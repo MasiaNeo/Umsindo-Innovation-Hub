@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umsindo Innovation Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-4 flex justify-between items-center sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-indigo-600">Umsindo Innovation Hub</h1>
+    <div class="space-x-6">
+      <a href="#home" class="hover:text-indigo-500">Home</a>
+      <a href="#about" class="hover:text-indigo-500">About</a>
+      <a href="#bookings" class="hover:text-indigo-500">Bookings</a>
+      <a href="#contact" class="hover:text-indigo-500">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="p-10 text-center">
+    <h2 class="text-4xl font-bold mb-4">Welcome to Umsindo Innovation Hub</h2>
+    <p class="text-lg max-w-2xl mx-auto">
+      A home for creatives—connecting content creators, musicians, actors, and artists to their destiny.
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white p-10 text-center">
+    <h2 class="text-3xl font-semibold mb-4">About Us</h2>
+    <p class="max-w-2xl mx-auto text-gray-700">
+      Umsindo Innovation Hub is dedicated to helping artists reach their goals. Whether you're promoting events,
+      building your brand, or connecting with opportunities, Umsindo is your platform for success.
+    </p>
+  </section>
+
+  <!-- Bookings Section -->
+  <section id="bookings" class="bg-gray-100 p-10">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Bookings</h2>
+    <form class="max-w-xl mx-auto space-y-4 bg-white p-6 rounded-2xl shadow">
+      <div>
+        <label class="block font-medium">Name</label>
+        <input type="text" class="w-full p-2 border rounded" required />
+      </div>
+      <div>
+        <label class="block font-medium">Surname</label>
+        <input type="text" class="w-full p-2 border rounded" required />
+      </div>
+      <div>
+        <label class="block font-medium">Email</label>
+        <input type="email" class="w-full p-2 border rounded" required />
+      </div>
+      <div>
+        <label class="block font-medium">Contact Number</label>
+        <input type="tel" class="w-full p-2 border rounded" required />
+      </div>
+      <div>
+        <label class="block font-medium">Description</label>
+        <textarea class="w-full p-2 border rounded h-28" required></textarea>
+      </div>
+      <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">
+        Submit Booking
+      </button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-10 text-center">
+    <h2 class="text-3xl font-semibold mb-4">Contact Us</h2>
+    <p class="text-gray-700">
+      Reach out to us at <strong>Email:</strong> contact@umsindo.co.za or <strong>Phone:</strong> 012 345 6789
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center text-gray-500 text-sm p-4 border-t mt-10">
+    &copy; <span id="year"></span> Umsindo Innovation Hub. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById(\"year\").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
